@@ -48,7 +48,8 @@ const StyledDocsLayout = styled.div`
             margin: 6rem 0 5rem;
         }
 
-        h3 {
+        h3,
+        .h3 {
             margin: 5rem 0 1rem;
         }
 
@@ -56,9 +57,6 @@ const StyledDocsLayout = styled.div`
             margin: 3rem 0 1rem;
         }
 
-        h2 + p {
-            margin-block-end: 0em;
-        }
         h2 + ul {
             margin-block-end: 0em;
         }

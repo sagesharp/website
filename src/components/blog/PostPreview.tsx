@@ -26,6 +26,10 @@ const StyledPostPreview = styled.div`
         border-top-right-radius: 3px;
     }
 
+    .h3 + p {
+        margin: 0;
+    }
+
     p {
         color: ${colors.text};
         font-weight: 400;
@@ -85,7 +89,7 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                     className="background"
                 />
                 <div className="content">
-                    <h3>{b.frontmatter.title}</h3>
+                    <h2 className="h3">{b.frontmatter.title}</h2>
                     <p>{b.excerpt}</p>
                 </div>
                 <div className="info">

@@ -88,33 +88,35 @@ export default `
     /* ------------------------------------------- */
 
     h1,
+    .h1,
     h2,
+    .h2,
     h3,
-    h4 {
+    .h3,
+    h4,
+    .h4 {
         font-family: 'Montserrat', sans-serif;
         line-height: 1.2;
         color: ${colors.textDark};
     }
 
     h1,
-    h2 {
+    .h1,
+    h2,
+    .h2 {
         font-weight: 400;
         line-height: 1.4;
     }
 
     h3,
-    h4 {
+    .h3,
+    h4,
+    .h4 {
         font-weight: 600;
     }
 
     h1,
-    h2,
-    h3,
-    h4 {
-        color: ${colors.textDark};
-    }
-
-    h1 {
+    .h1 {
         font-size: ${sizes.font.h1};
 
         @media(max-width: ${sizes.breakpoints.md}) {
@@ -122,21 +124,26 @@ export default `
         }
     }
 
-    h2 {
+    h2,
+    .h2 {
         font-size: ${sizes.font.h2};
-        margin-bottom: 4rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 3.2rem;
             margin-bottom: 3rem;
         }
+    }
+
+    h2 {
+        margin-bottom: 4rem;
 
         & + p {
             margin: -3rem 0 5rem;
         }
     }
 
-    h3 {
+    h3,
+    .h3 {
         font-size: ${sizes.font.h3};
         margin-bottom: 2.8rem;
 
